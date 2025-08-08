@@ -8,7 +8,7 @@ import InputComponent from '../InputComponent/InputComponent';
 import CheckBoxComponent from '../CheckBoxComponent/CheckBoxComponent';
 import PreviewField from '../PreviewFieldComponent/PreviewFieldComponent';
 
-export default function FormBuilder() {
+const FormBuilder = () => {
   const [fields, setFields] = useState<Field[]>([]);
 
   const addField = (type: FieldType) => {
@@ -93,4 +93,6 @@ export default function FormBuilder() {
       </div>
     </div>
   );
-}
+};
+
+export default FormBuilder;
